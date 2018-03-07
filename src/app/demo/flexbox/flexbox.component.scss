@@ -1,0 +1,17 @@
+.flex-container {
+  display: flex;
+  flex-flow: row wrap; // allows boxes to wrap
+  justify-content: space-around;
+}
+
+.flex-item {
+  width: 200px;
+  height: 150px;
+  margin-top: 5px;
+  background: tomato;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  line-height: 150px; // this will center the text vertically since it's the same size as the height
+}
