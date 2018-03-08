@@ -7,14 +7,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: 'contactmanager', loadChildren: './contactmanager/contactmanager.module#contactManager' }, // path to module and module name
-  { path: 'demo', loadChildren: './demo/demo.module#DemoModule' }, // path to module and module name
-  { path: '**', redirectTo: 'contactmanager'}
+  { path: 'contactmanager', loadChildren: './contactmanager/contactmanager.module#ContactmanagerModule' },
+  { path: 'demo', loadChildren: './demo/demo.module#DemoModule' },
+  { path: '**', redirectTo: 'contactmanager' }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
